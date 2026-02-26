@@ -1,0 +1,15 @@
+import random
+
+number = random.randint(1,100)
+
+print("Welcome to number guessing game !")
+
+while True:
+    you_think = int(input("I choosen : "))
+
+    if(you_think>number):
+        print("Ha Ha control ! picche aao")
+    elif(you_think<number):
+        print("Jane do thoda aur !")
+    else:
+        print("Badhai ho! Tussi great ho !!!")
