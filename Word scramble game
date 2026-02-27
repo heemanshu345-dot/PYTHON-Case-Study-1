@@ -1,0 +1,32 @@
+import random
+
+# List of words
+words = ["amazon", "tcs", "deloitte", "infosys", "technical",
+         "python", "school", "laptop", "mobile", "keyboard"]
+
+# Select random word
+word = random.choice(words)
+
+# Scramble word
+scrambled = list(word)
+random.shuffle(scrambled)
+scrambled_word = "".join(scrambled)
+
+print("🎮 Word Scrambling Game")
+print("Make meaningful word")
+print("Scrambled word is:", scrambled_word)
+
+attempts = 3
+
+while attempts > 0:
+    guess = input("Enter your guess: ").lower()
+    
+    if guess == word:
+        print("Congrats!!! You win")
+        break
+    else:
+        attempts -= 1
+        print("No No!!,Think again , Ateempt left  ",attempts)
+
+if attempts == 0:
+    print("😢 Game Over! The correct word was:", word)
