@@ -13,3 +13,4 @@ while True:
         print("Jane do thoda aur !")
     else:
         print("Badhai ho! Tussi great ho !!!")
+        break
